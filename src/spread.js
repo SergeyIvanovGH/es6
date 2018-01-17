@@ -11,7 +11,26 @@ const data = {
 
 const resultObject = {
     ...firstUser,
-    data
+    ...data,
+    newValue: "new value",
+    antother: "another"
 };
 
 console.log(resultObject);
+
+
+
+
+const firstArray = [1,2,3,4,5];
+const secondArray = [6,7,8,9];
+
+// const resultArray = firstArray.concat(secondArray);
+
+const resultArray = [
+    ... firstArray,
+    34,
+    "jfefwerfwkerew",
+    ...secondArray
+];
+
+console.log(resultArray);
